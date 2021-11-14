@@ -1,6 +1,8 @@
 ---
 unbound_anchorfile: "/var/lib/unbound/root.key"
 unbound_anchor_enabled: true
+unbound_certbundlefile: "/etc/ssl/certs/ca-certificates.crt"
+unbound_certbundle_enabled: true
 unbound_logfile: "/var/log/unbound.log"
 unbound_configuration:
     - verbosity: 1

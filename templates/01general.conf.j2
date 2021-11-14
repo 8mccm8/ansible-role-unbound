@@ -8,6 +8,9 @@
 {% if unbound_anchor_enabled %}
     auto-trust-anchor-file: "{{unbound_anchorfile}}"
 {% endif %}
+{% if unbound_certbundle_enabled %}
+    tls-cert-bundle: "{{unbound_certbundlefile}}"
+{% endif %}
 {% for interface in unbound_interfaces %}
     interface: {{interface}}
 {% endfor %}
